@@ -97,9 +97,10 @@ const styles = StyleSheet.create({
 
     },
     leftIconStyle: {
-        width: 55,
-        height: 55,
-        marginLeft: 5,
+        width: 50,
+        height: 50,
+        borderRadius: 25,
+        marginLeft: 10,
         alignItems: 'center',
     },
 });

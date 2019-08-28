@@ -23,6 +23,7 @@ import { topCell, normalSectionCell } from '../Component/CellStyle'
 
 import YXWebView from '../Component/YXWebView'
 
+
 const {width,height} = Dimensions.get('window');
 
 class YXMine extends React.Component {
@@ -35,21 +36,36 @@ class YXMine extends React.Component {
         super(props);
 
         this.state = {
-            isOn: true
+            isOn: true,
+            userInfo:{},
         };
     }
     
+    componentDidMount() {
+        storage.load({
+            key:'userInfo',
+            autoSync: false,
+        })
+            .then((res)=> {
+                console.log(res);
+                this.setState({'userInfo':res});
+            })
+            .catch((err)=>console.log(err));
+    }
+
     render() {
+       
+        let userInfos = this.state.userInfo;
         return (
             <View style={styles.container}>
                 <SectionList
                     sections={[
                         {headerTitle: '', data: [
-                            {leftName:'13787878787',isShowRightIcon:true,bottomName:'二手设备',iconName:'icon_user'}, 
+                            {leftName:userInfos.mobile,isShowRightIcon:true,bottomName:userInfos.name,iconName:userInfos.imgUrl}, 
                         ]},
                         {headerTitle: '', data: [
                             {leftName:'公司/组织设备',isShowRightIcon:true}, 
-                            {leftName:'手机号',isShowRightIcon:true,rightName:'13333333333'}
+                            {leftName:'手机号',isShowRightIcon:true,rightName:userInfos.mobile}
                         ]},
                         {headerTitle: '', data: [
                             {leftName:'修改密码',isShowRightIcon:true}, 

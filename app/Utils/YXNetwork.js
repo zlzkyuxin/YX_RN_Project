@@ -57,6 +57,7 @@ import moment from 'moment'
         fetch(url)
         .then((response) => response.text())
         .then((responseText) => {
+            console.log('responseText='+responseText);
             callback(JSON.parse(responseText));
         }).done();
     }
