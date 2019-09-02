@@ -14,8 +14,11 @@ import CustomNavigator from './app/Utils/CustomNavigator'
 import { storage } from './app/Utils/YXStorage'
 
 class App extends React.Component {
+
   render() {
     global.storage = storage();
+
+    alert('deviceToken='+this.props['deviceToken']);
     return(
         <YXMain
           ref={ navigatorRef => {
@@ -32,7 +35,8 @@ class App extends React.Component {
       // // Add listener for local notifications
       PushNotificationIOS.addEventListener('localNotification', this._onLocalNotification);
       // Add listener for deviceToken registered
-        PushNotificationIOS.addEventListener('register', this._register);
+      PushNotificationIOS.addEventListener('register', this._register);
+
     }
 
     //界面即将消失时 注销监听事件 
@@ -44,18 +48,22 @@ class App extends React.Component {
     }
     //receive remote notification
    _onNotification(notification) {
-      console.log('远程推送');
+      alert('远程推送');
     } 
     //receive local notification
     _onLocalNotification(notification){
-      console.log('本地推送');
+      alert('本地推送');
     }
     //获取device token
     _register(deviceToken) {
         //使用window保存下devicetoken
         alert('触发了register方法');
-        window.iOSDeviceToken = deviceToken;
-        console.log('deviceToken='+deviceToken);
+        window.IOSDeviceToken = deviceToken;
+        alert('deviceToken='+deviceToken);
+        storage.load({
+          key:'IOSDeviceToken',
+          data: deviceToken,
+        });
     }
 }
 

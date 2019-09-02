@@ -15,6 +15,7 @@ import YXDevice from '../Device/YXDevice'
 import YXAdd from '../Add/YXAdd'
 import YXUserCenter from '../Mine/YXUserCenter'
 import YXWebView from '../Component/YXWebView'
+import YXMap from '../Map/YXMap'
 
 
 const TabBarItem = [
@@ -31,6 +32,7 @@ const TabBarItem = [
 const HomeNavigator = createStackNavigator({
   Home: YXHome,
   Detail: YXMessage,
+  Map: YXMap,
 },{
   initialRouteName:'Home',
   // navigationOptions: ({navigation}) => navigationOptions(navigation,'首页',{uri : 'icon_home1'},{uri:'icon_home2',},'首页'),

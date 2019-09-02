@@ -5345,6 +5345,11 @@ react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4, react-is@^16.8.6:
   resolved "https://registry.npm.taobao.org/react-is/download/react-is-16.9.0.tgz?cache=0&sync_timestamp=1565317930066&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-is%2Fdownload%2Freact-is-16.9.0.tgz#21ca9561399aad0ff1a7701c01683e8ca981edcb"
   integrity sha1-IcqVYTmarQ/xp3AcAWg+jKmB7cs=
 
+react-native-baidu-map@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.npm.taobao.org/react-native-baidu-map/download/react-native-baidu-map-1.0.6.tgz#685af096f0096a514bd7d4fd536c8b257240b207"
+  integrity sha1-aFrwlvAJalFL19T9U2yLJXJAsgc=
+
 react-native-device-info@^2.3.2:
   version "2.3.2"
   resolved "https://registry.npm.taobao.org/react-native-device-info/download/react-native-device-info-2.3.2.tgz#db2b8f135aaf2515583e367ab791dcc7d2f0d14c"

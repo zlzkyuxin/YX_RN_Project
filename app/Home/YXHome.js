@@ -28,7 +28,6 @@ import CustomNavigator from '../Utils/CustomNavigator'
 import NavigationBar from '../Component/NavigationBar'
 import YXNetwork from '../Utils/YXNetwork'
 import md5 from 'react-native-md5'
-import { from } from 'rxjs';
 
 const {width,height} = Dimensions.get('window');
 const STATUS_HEIGHt = Platform.OS === 'ios' ? (isIphoneX() ? 88 : 64) : StatusBar.currentHeight;
@@ -55,10 +54,12 @@ class YXHome extends React.Component {
       //         // showBack={true}
       //     />
       // ),
-      header: null,
+      // header: null,
     };
   };
   render() {
+
+    alert('home-deviceToken='+this.props['deviceToken']);
     return (
       <View style={{ flex:1 }}>
         {/* 轮播图 */}
@@ -66,16 +67,15 @@ class YXHome extends React.Component {
         {/* 设备状态图 */}
         {this.renderDeviceState()}
         <View style={{backgroundColor:'#e7e7e7',width:width,height:10}}></View>
-        {}
+        {this.network()}
         
-        {/* <TouchableOpacity 
+        <TouchableOpacity 
             onPress={ ()=>
-              // this.props.navigation.navigate('Detail',{'title':'长沙'})
-              this.network()
+              this.props.navigation.navigate('Map',{'title':'百度地图'})
             }
         >
-            <Text style={{backgroundColor:'#f40'}}>长沙长沙长沙长沙长沙长沙长沙长沙长沙长沙长沙长沙长沙长沙长沙长沙长沙长沙长沙长沙</Text>
-        </TouchableOpacity> */}
+            <Text style={{backgroundColor:'#f40'}}>跳转百度地图</Text>
+        </TouchableOpacity>
       </View>
     );
   }
@@ -91,7 +91,6 @@ class YXHome extends React.Component {
               horizontal ={true}
               showsPagination={false}
           >
-          
               <Image source={{uri:'swper1'}} style={{width:width,height:TOP_Height+180}}/>
               <Image source={{uri:'swper2'}} style={{width:width,height:TOP_Height+180}}/>
               <Image source={{uri:'swper3'}} style={{width:width,height:TOP_Height+180}}/>
@@ -112,22 +111,8 @@ class YXHome extends React.Component {
                     <Text style={{color:'green',fontSize:20}}>0</Text>
                 </View>
                 <View style={{justifyContent:'center',alignItems:'center'}}>
-                    <View style={{marginBottom:10}}>
-                        <Svg
-                            height="50"
-                            width="100"
-                        >
-                            <Circle
-                                cx="50"   //中心点x
-                                cy="50"   //中心点y
-                                r="45"    //半径
-                                stroke="black"　　//外边框 颜色　　
-                                strokeWidth="10"  //外边框 宽度
-                                fill="clear"   //填充颜色
-                                strokeOpacity="0.8"
-                            />
-                        </Svg>
-                    </View>
+                    {/* 中间的进度条 */}
+                    {this.renderCircle()}
                     <Text style={{color:'green',marginBottom:10}}>月开工(台)</Text>
                     <Text style={{color:'green',fontSize:20}}>0</Text>
                 </View>
@@ -159,9 +144,30 @@ class YXHome extends React.Component {
     )
   }
 
-
+  //中间的进度条
+  renderCircle() {
+    return(
+      <View style={{marginBottom:10}}>
+        <Svg
+            height="50"
+            width="100"
+        >
+            <Circle
+                cx="50"   //中心点x
+                cy="50"   //中心点y
+                r="45"    //半径
+                stroke="black"　　//外边框 颜色　　
+                strokeWidth="10"  //外边框 宽度
+                fill="#fff"   //填充颜色
+                strokeOpacity="0.8"
+            />
+        </Svg>
+    </View>
+    );
+  }
 
   network = ()=>{
+
     let mis = (md5.hex_md5('123456znj')).toUpperCase();
     console.log('密码为：'+mis);
     let url = 'http://apisandbox.zoomlion.com/app-web/Client/comminterface.htm';

@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* YXProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* YXProjectTests.m */; };
+		1201B3E1231CB28100676F76 /* libPods-YXProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1201B3E0231CB28100676F76 /* libPods-YXProject.a */; };
+		126E5B9C23175C7400AD19B4 /* UMPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 126E5B9523175C7400AD19B4 /* UMPush.framework */; };
+		126E5B9D23175C7400AD19B4 /* UMCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 126E5B9623175C7400AD19B4 /* UMCommon.framework */; };
+		126E5B9E23175C7400AD19B4 /* UMPushModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 126E5B9823175C7400AD19B4 /* UMPushModule.m */; };
+		126E5B9F23175C7400AD19B4 /* RNUMConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 126E5B9923175C7400AD19B4 /* RNUMConfigure.m */; };
+		126E5BA123175F2100AD19B4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 126E5BA023175F2000AD19B4 /* libsqlite3.tbd */; };
+		12D46F7D231CB96E004417AB /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A8ECA923191ABD00D019A5 /* libcrypto.a */; };
+		12D46F7E231CB96E004417AB /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A8ECAB23191ABD00D019A5 /* libssl.a */; };
+		12D46F7F231CBC77004417AB /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A8ECA923191ABD00D019A5 /* libcrypto.a */; };
+		12D46F80231CBC77004417AB /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A8ECAB23191ABD00D019A5 /* libssl.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -16,7 +26,6 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* YXProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* YXProjectTests.m */; };
-		7BF463DEFCA04F23B0287605 /* libPods-YXProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE93086580350FD402F0AD33 /* libPods-YXProject.a */; };
 		989BD5CE3D58A002AD37CAF6 /* libPods-YXProject-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB914AF1324756AD1656FA5F /* libPods-YXProject-tvOSTests.a */; };
 		D669241D60F8DBA7EEDC4E98 /* libPods-YXProject-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A1F1476AF1AA3075711F01 /* libPods-YXProject-tvOS.a */; };
 		E3C5A3CDCD00BF2A8E64C9CD /* libPods-YXProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F318F3B3F7B951F8B1202251 /* libPods-YXProjectTests.a */; };
@@ -44,11 +53,30 @@
 		00E356EE1AD99517003FC87E /* YXProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YXProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* YXProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXProjectTests.m; sourceTree = "<group>"; };
+		1201B3E0231CB28100676F76 /* libPods-YXProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-YXProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		122E973123160E330000D7E4 /* libRNCPushNotificationIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNCPushNotificationIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		122E973323160E420000D7E4 /* libReact-RCTPushNotification.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTPushNotification.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		122E973E23160E9F0000D7E4 /* libRNCPushNotificationIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRNCPushNotificationIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		122E974023160EC90000D7E4 /* libReact-RCTPushNotification.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-RCTPushNotification.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		126E5B9523175C7400AD19B4 /* UMPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMPush.framework; sourceTree = "<group>"; };
+		126E5B9623175C7400AD19B4 /* UMCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommon.framework; sourceTree = "<group>"; };
+		126E5B9823175C7400AD19B4 /* UMPushModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMPushModule.m; sourceTree = "<group>"; };
+		126E5B9923175C7400AD19B4 /* RNUMConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNUMConfigure.m; sourceTree = "<group>"; };
+		126E5B9A23175C7400AD19B4 /* UMPushModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMPushModule.h; sourceTree = "<group>"; };
+		126E5B9B23175C7400AD19B4 /* RNUMConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNUMConfigure.h; sourceTree = "<group>"; };
+		126E5BA023175F2000AD19B4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		12754C202315686F00158958 /* YXProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = YXProject.entitlements; path = YXProject/YXProject.entitlements; sourceTree = "<group>"; };
+		12A8ECA923191ABD00D019A5 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = Pods/BaiduMapKit/BaiduMapKit/thirdlibs/libcrypto.a; sourceTree = "<group>"; };
+		12A8ECAB23191ABD00D019A5 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = Pods/BaiduMapKit/BaiduMapKit/thirdlibs/libssl.a; sourceTree = "<group>"; };
+		12DE64D62318B11200131DA8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		12DE64D82318B11B00131DA8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		12DE64DA2318B12200131DA8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		12DE64DC2318B12A00131DA8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		12DE64DE2318B13400131DA8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		12DE64E02318B13C00131DA8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		12DE64E22318B14400131DA8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		12DE64E42318B15A00131DA8 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		12DE64E62318B1B600131DA8 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		13B07F961A680F5B00A75B9A /* YXProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YXProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = YXProject/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = YXProject/AppDelegate.m; sourceTree = "<group>"; };
@@ -69,7 +97,6 @@
 		DCCBA177FAF23103438A3618 /* Pods-YXProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXProject.debug.xcconfig"; path = "Target Support Files/Pods-YXProject/Pods-YXProject.debug.xcconfig"; sourceTree = "<group>"; };
 		EB914AF1324756AD1656FA5F /* libPods-YXProject-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YXProject-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		EE7157D0918BFDB932001204 /* Pods-YXProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXProject.release.xcconfig"; path = "Target Support Files/Pods-YXProject/Pods-YXProject.release.xcconfig"; sourceTree = "<group>"; };
 		F318F3B3F7B951F8B1202251 /* libPods-YXProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YXProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -79,6 +106,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12D46F7F231CBC77004417AB /* libcrypto.a in Frameworks */,
+				12D46F80231CBC77004417AB /* libssl.a in Frameworks */,
 				E3C5A3CDCD00BF2A8E64C9CD /* libPods-YXProjectTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,7 +116,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BF463DEFCA04F23B0287605 /* libPods-YXProject.a in Frameworks */,
+				12D46F7D231CB96E004417AB /* libcrypto.a in Frameworks */,
+				12D46F7E231CB96E004417AB /* libssl.a in Frameworks */,
+				126E5BA123175F2100AD19B4 /* libsqlite3.tbd in Frameworks */,
+				126E5B9D23175C7400AD19B4 /* UMCommon.framework in Frameworks */,
+				126E5B9C23175C7400AD19B4 /* UMPush.framework in Frameworks */,
+				1201B3E1231CB28100676F76 /* libPods-YXProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +176,36 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		126E5B9323175C7400AD19B4 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				126E5B9423175C7400AD19B4 /* UMComponents */,
+				126E5B9723175C7400AD19B4 /* UMReactBridge */,
+			);
+			name = Category;
+			path = YXProject/Category;
+			sourceTree = "<group>";
+		};
+		126E5B9423175C7400AD19B4 /* UMComponents */ = {
+			isa = PBXGroup;
+			children = (
+				126E5B9523175C7400AD19B4 /* UMPush.framework */,
+				126E5B9623175C7400AD19B4 /* UMCommon.framework */,
+			);
+			path = UMComponents;
+			sourceTree = "<group>";
+		};
+		126E5B9723175C7400AD19B4 /* UMReactBridge */ = {
+			isa = PBXGroup;
+			children = (
+				126E5B9823175C7400AD19B4 /* UMPushModule.m */,
+				126E5B9923175C7400AD19B4 /* RNUMConfigure.m */,
+				126E5B9A23175C7400AD19B4 /* UMPushModule.h */,
+				126E5B9B23175C7400AD19B4 /* RNUMConfigure.h */,
+			);
+			path = UMReactBridge;
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* YXProject */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,12 +224,24 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1201B3E0231CB28100676F76 /* libPods-YXProject.a */,
+				12A8ECA923191ABD00D019A5 /* libcrypto.a */,
+				12A8ECAB23191ABD00D019A5 /* libssl.a */,
+				12DE64E62318B1B600131DA8 /* libc++.tbd */,
+				12DE64E42318B15A00131DA8 /* libstdc++.6.0.9.tbd */,
+				12DE64E22318B14400131DA8 /* CoreTelephony.framework */,
+				12DE64E02318B13C00131DA8 /* Security.framework */,
+				12DE64DE2318B13400131DA8 /* CoreGraphics.framework */,
+				12DE64DC2318B12A00131DA8 /* SystemConfiguration.framework */,
+				12DE64DA2318B12200131DA8 /* OpenGLES.framework */,
+				12DE64D82318B11B00131DA8 /* QuartzCore.framework */,
+				12DE64D62318B11200131DA8 /* CoreLocation.framework */,
+				126E5BA023175F2000AD19B4 /* libsqlite3.tbd */,
 				122E974023160EC90000D7E4 /* libReact-RCTPushNotification.a */,
 				122E973E23160E9F0000D7E4 /* libRNCPushNotificationIOS.a */,
 				122E973323160E420000D7E4 /* libReact-RCTPushNotification.a */,
 				122E973123160E330000D7E4 /* libRNCPushNotificationIOS.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				CE93086580350FD402F0AD33 /* libPods-YXProject.a */,
 				58A1F1476AF1AA3075711F01 /* libPods-YXProject-tvOS.a */,
 				EB914AF1324756AD1656FA5F /* libPods-YXProject-tvOSTests.a */,
@@ -185,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				13B07FAE1A68108700A75B9A /* YXProject */,
+				126E5B9323175C7400AD19B4 /* Category */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* YXProjectTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
@@ -239,6 +316,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				4934FFA14D94F9A82ACAF1E1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -452,6 +530,28 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		4934FFA14D94F9A82ACAF1E1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YXProject/Pods-YXProject-resources.sh",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/mapapi.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapapi.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YXProject/Pods-YXProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6E34DA8E8E4E53109AD8BD4F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -549,7 +649,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				126E5B9E23175C7400AD19B4 /* UMPushModule.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				126E5B9F23175C7400AD19B4 /* RNUMConfigure.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,6 +706,7 @@
 			baseConfigurationReference = 786EE44F3DBD40CBE9AB19E3 /* Pods-YXProjectTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -611,6 +714,7 @@
 				INFOPLIST_FILE = YXProjectTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Pods/BaiduMapKit/BaiduMapKit/thirdlibs";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -628,9 +732,11 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = YXProjectTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Pods/BaiduMapKit/BaiduMapKit/thirdlibs";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -651,6 +757,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 8Z2LYS8UUX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Category/UMComponents",
+					"$(PROJECT_DIR)/Category",
+					"$(PROJECT_DIR)/YXProject/Category/UMComponents",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -677,9 +789,14 @@
 					"\"${PODS_ROOT}/Headers/Public/glog\"",
 					"\"${PODS_ROOT}/Headers/Public/react-native-webview\"",
 					"\"${PODS_ROOT}/Headers/Public/yoga\"",
+					"$(SRCROOT)/../node_modules/react-native-baidu-map/ios/RCTBaiduMap",
 				);
 				INFOPLIST_FILE = YXProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PODS_ROOT)/Pods/BaiduMapKit/BaiduMapKit/thirdlibs",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -699,6 +816,12 @@
 				CODE_SIGN_ENTITLEMENTS = YXProject/YXProject.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8Z2LYS8UUX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Category/UMComponents",
+					"$(PROJECT_DIR)/Category",
+					"$(PROJECT_DIR)/YXProject/Category/UMComponents",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -725,9 +848,14 @@
 					"\"${PODS_ROOT}/Headers/Public/glog\"",
 					"\"${PODS_ROOT}/Headers/Public/react-native-webview\"",
 					"\"${PODS_ROOT}/Headers/Public/yoga\"",
+					"$(SRCROOT)/../node_modules/react-native-baidu-map/ios/RCTBaiduMap",
 				);
 				INFOPLIST_FILE = YXProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PODS_ROOT)/Pods/BaiduMapKit/BaiduMapKit/thirdlibs",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
