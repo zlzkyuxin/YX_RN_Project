@@ -17,8 +17,6 @@ class App extends React.Component {
 
   render() {
     global.storage = storage();
-
-    alert('deviceToken='+this.props['deviceToken']);
     return(
         <YXMain
           ref={ navigatorRef => {
@@ -57,8 +55,6 @@ class App extends React.Component {
     //获取device token
     _register(deviceToken) {
         //使用window保存下devicetoken
-        alert('触发了register方法');
-        window.IOSDeviceToken = deviceToken;
         alert('deviceToken='+deviceToken);
         storage.load({
           key:'IOSDeviceToken',

@@ -16,6 +16,13 @@ import YXAdd from '../Add/YXAdd'
 import YXUserCenter from '../Mine/YXUserCenter'
 import YXWebView from '../Component/YXWebView'
 import YXMap from '../Map/YXMap'
+import YXCompany from '../Mine/Company/YXCompany'
+import YXAbout from '../Mine/About/YXAbout'
+import YXSuggest from '../Mine/Suggest/YXSuggest'
+import YXModifyMobile from '../Mine/ModifyMobile/YXModifyMobile'
+import YXModifyPassword from '../Mine/ModifyPassword/YXModifyPassword'
+import YXSetting from '../Mine/Setting/YXSetting'
+import YXLogin from '../Login/YXLogin';
 
 
 const TabBarItem = [
@@ -33,6 +40,7 @@ const HomeNavigator = createStackNavigator({
   Home: YXHome,
   Detail: YXMessage,
   Map: YXMap,
+  Login: YXLogin
 },{
   initialRouteName:'Home',
   // navigationOptions: ({navigation}) => navigationOptions(navigation,'首页',{uri : 'icon_home1'},{uri:'icon_home2',},'首页'),
@@ -64,6 +72,12 @@ const MineNavigator = createStackNavigator({
   More: YXMine,
   UserCenter: YXUserCenter,
   WebView: YXWebView,
+  Company: YXCompany,
+  About: YXAbout,
+  ModifyMobile: YXModifyMobile,
+  ModifyPassword: YXModifyPassword,
+  Setting: YXSetting,
+  Suggest: YXSuggest,
 },{
   // navigationOptions: ({navigation}) => navigationOptions(navigation,'我的',{uri : 'icon_user1'},{uri:'icon_user2'},'我的'),
   defaultNavigationOptions: () => defaultNavigationOptions('我的'),

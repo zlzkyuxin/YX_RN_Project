@@ -58,8 +58,12 @@ const styles = StyleSheet.create({
     iconStyle: {
         width: 17,
         height: 17,
-        marginRight: 12,
+        // marginRight: 12,
         alignItems: 'center',
+        // backgroundColor: 'green',
+        position: 'absolute',
+        zIndex: 99,
+        right: 12,
     },
     rightNameStyle: {
         position: 'absolute',
@@ -89,6 +93,12 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
     },
+    topLeftViewStyle: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        width: width - 20,
+        // backgroundColor: '#f40',
+    },
     topTextStyle: {
         height: 40,
         fontSize: 18,
@@ -103,10 +113,17 @@ const styles = StyleSheet.create({
         marginLeft: 10,
         alignItems: 'center',
     },
+    rightIconStyle: {
+        width: 50,
+        height: 50,
+        borderRadius: 25,
+        marginLeft: 10,
+        alignItems: 'center',
+    },
 });
 
 module.exports = {
-    topCell: (item,index,section) => {
+    topSectionCell: (item,index,section) => {
         return (
             <View style={styles.topViewStyle}>
                 <View style={styles.leftViewStyle}>
@@ -147,6 +164,28 @@ module.exports = {
                     ) :
                     <Text></Text>
                 }
+                {
+                    item.isShowRightIcon ?  
+                    (<Image 
+                        source={{uri:'arrow_right'}}
+                        style={styles.iconStyle}
+                    />) : 
+                    <Text></Text>
+                }
+                <View style={styles.lineStyle}></View>
+            </View>
+        )
+    },
+    topCell: (item) => {
+        return (
+            <View style={styles.topViewStyle}>
+                <View style={styles.topLeftViewStyle}>
+                    <Text style={styles.titleStyle}>{item.leftName}</Text>
+                    <Image 
+                        source={{uri:item.iconName}}
+                        style={styles.rightIconStyle}
+                    />
+                </View>
                 {
                     item.isShowRightIcon ?  
                     (<Image 

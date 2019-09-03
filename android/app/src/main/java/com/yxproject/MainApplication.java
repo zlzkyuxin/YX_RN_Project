@@ -7,11 +7,14 @@ import com.facebook.react.PackageList;
 import com.facebook.hermes.reactexecutor.HermesExecutorFactory;
 import com.facebook.react.bridge.JavaScriptExecutorFactory;
 import com.facebook.react.ReactApplication;
-import org.lovebing.reactnative.baidumap.BaiduMapPackage;
+import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
+import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
+import org.lovebing.reactnative.baidumap.BaiduMapPackage;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class MainApplication extends Application implements ReactApplication {
@@ -24,12 +27,18 @@ public class MainApplication extends Application implements ReactApplication {
 
     @Override
     protected List<ReactPackage> getPackages() {
-      @SuppressWarnings("UnnecessaryLocalVariable")
-      List<ReactPackage> packages = new PackageList(this).getPackages();
-      // Packages that cannot be autolinked yet can be added manually here, for example:
-      // packages.add(new MyReactNativePackage());
-      new BaiduMapPackage(getApplicationContext()) //这一句
-      return packages;
+//      @SuppressWarnings("UnnecessaryLocalVariable")
+//      List<ReactPackage> packages = new PackageList(this).getPackages();
+//      // Packages that cannot be autolinked yet can be added manually here, for example:
+//      // packages.add(new MyReactNativePackage());
+//
+//      packages.add(new BaiduMapPackage());
+//      return packages;
+      return Arrays.<ReactPackage>asList(
+              new MainReactPackage(),
+            new RNDeviceInfo(),
+              new BaiduMapPackage()
+      );
     }
 
     @Override

@@ -31,6 +31,8 @@ target 'YXProject' do
   pod 'react-native-baidu-map', :podspec => '../node_modules/react-native-baidu-map/ios/react-native-baidu-map.podspec'
 
 
+  pod 'RNDeviceInfo', :path => '../node_modules/react-native-device-info'
+
   target 'YXProjectTests' do
     inherit! :search_paths
     # Pods for testing

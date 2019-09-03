@@ -18,7 +18,7 @@ import {
   TouchableOpacity,
   StyleSheet,
   Platform,
-  StatusBar,
+  // StatusBar,
   Dimensions
 } from 'react-native';
 import {Svg,Circle} from 'react-native-svg'
@@ -30,7 +30,8 @@ import YXNetwork from '../Utils/YXNetwork'
 import md5 from 'react-native-md5'
 
 const {width,height} = Dimensions.get('window');
-const STATUS_HEIGHt = Platform.OS === 'ios' ? (isIphoneX() ? 88 : 64) : StatusBar.currentHeight;
+// const STATUS_HEIGHt = Platform.OS === 'ios' ? (isIphoneX() ? 88 : 64) : StatusBar.currentHeight;
+const STATUS_HEIGHt = Platform.OS === 'ios' ? (isIphoneX() ? 88 : 64) : 0;
 const TOP_Height = Platform.OS === 'ios' ? (isIphoneX() ? 44 : 20) : 0;
 
 class YXHome extends React.Component {
@@ -54,12 +55,10 @@ class YXHome extends React.Component {
       //         // showBack={true}
       //     />
       // ),
-      // header: null,
+      header: null,
     };
   };
   render() {
-
-    alert('home-deviceToken='+this.props['deviceToken']);
     return (
       <View style={{ flex:1 }}>
         {/* 轮播图 */}
@@ -168,12 +167,12 @@ class YXHome extends React.Component {
 
   network = ()=>{
 
-    let mis = (md5.hex_md5('123456znj')).toUpperCase();
+    let mis = (md5.hex_md5('123456')).toUpperCase();
     console.log('密码为：'+mis);
     let url = 'http://apisandbox.zoomlion.com/app-web/Client/comminterface.htm';
     let params = {
       funId: 'userLogin',
-      accountName:'15211160825',
+      accountName:'17363684003',
       password: mis,
     };
 
@@ -187,7 +186,7 @@ class YXHome extends React.Component {
           key:'userInfo',
           data: resp.userInfo,
         });
-        // alert(window.userInfo);
+        
     });
   }
 }

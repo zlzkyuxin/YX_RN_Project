@@ -20,7 +20,8 @@ import CustomNavigator from '../Utils/CustomNavigator'
 import { isIphoneX } from '../Utils/YXUtils'
 
 const {width,height} = Dimensions.get('window');
-const STATUS_HEIGHt = Platform.OS === 'ios' ? (isIphoneX() ? 88 : 64) : StatusBar.currentHeight;
+// const STATUS_HEIGHt = Platform.OS === 'ios' ? (isIphoneX() ? 88 : 64) : StatusBar.currentHeight;
+const STATUS_HEIGHt = Platform.OS === 'ios' ? (isIphoneX() ? 88 : 64) : 0;
 const TOP_Height = Platform.OS === 'ios' ? (isIphoneX() ? 44 : 20) : 0;
 
 class NavigationBar extends React.Component {

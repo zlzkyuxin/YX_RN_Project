@@ -36,8 +36,10 @@ import moment from 'moment'
             headers: {
                 'Accept': 'application/json',
                 //json形式
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                // 'cookie': 'JSESSIONID=A02DE27E90EE7641967650B447685E66',
             },
+            credentials: 'include',
             body: JSON.stringify(publickParams(data))
         };
         

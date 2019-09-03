@@ -18,6 +18,7 @@
     "react-native-gesture-handler": "^1.4.1",
     "react-native-md5": "^1.0.0",
     "react-native-reanimated": "^1.2.0",
+    "react-native-root-toast": "^3.1.2",
     "react-native-storage": "^1.0.1",
     "react-native-svg": "^9.7.1",
     "react-native-swiper": "^1.5.14",
